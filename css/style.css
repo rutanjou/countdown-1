@@ -1,0 +1,27 @@
+body{
+	background-color: black;
+}
+label{
+	color: white;
+}
+span{
+	color: white;
+}
+#content{
+	text-align: center;
+	font-size: 200px;
+	padding-top: 100px;
+}
+.getTime{
+	text-align: center;
+	padding-top: 100px;
+}
+.buttons{
+	text-align: center;
+	padding-top: 25px;
+}
+#setStart,#setReset,#setStop{
+	background-color: #f44336;
+	color: white;
+	font-size: 20px;
+}
