@@ -6,4 +6,3 @@ Créez un simple compte à rebours
 - un bouton reset
 - l'utilisateur peut spécifier un temps personnalisé
 - un bouton de réinitialisation
-- un bouton stop/play
