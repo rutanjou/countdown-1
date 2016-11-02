@@ -2,7 +2,7 @@
 	
 	var app ={
 
-		second:130,
+		second:1500,
 		intervalID: null,
 		active:true,
 
@@ -14,6 +14,8 @@
 			$('#setStart').on('click',this.start.bind(this));
 			$('#setReset').on('click',this.reset.bind(this));
 			$('#setStop').on('click',this.stop.bind(this));
+			$('.time').on ('click',this.time.bind(this));
+			
 		},
 
 		start:function(){
@@ -61,6 +63,7 @@
 
 		reset:function(){
 			this.start();
+
 		},
 
 		stop:function(){
@@ -77,7 +80,14 @@
 
 			}
 		},
+		time:function(){
+			$('.time').on('click',function(){
+				app.second = $(this).data('time');
+				app.launcherInterval();
 
+			});
+		},
+	
 	}
 
 	app.init();
