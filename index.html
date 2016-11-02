@@ -2,21 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Countdown-1</title>
 </head>
 <body>
-	<label>Minute</label>
-	<input value="0" type="text" id="setMinute">
-	<label>Seconde</label>
-	<input value="0" type="text" id="setSeconde">
-	<button id="setStart">Start</button>
-	<button id="setReset">Reset</button>
-	<button id="setStop">Stop/Play</button>
-
+<div id="tomatoTime">
+	<button data-time='1500' class='time'>Pomodoro</button>
+	<button data-time='300' class='time'>Short Break</button>
+	<button data-time='600' class='time'>Long Break</button>
+</div>
 	<div id="content">
 		<span id="viewMinute"></span>
 		<span>:</span>
 		<span id="viewSeconde"></span>
+	</div>
+	<div class="getTime">
+	<label>Minute</label>
+	<input value="0" type="text" id="setMinute">
+	
+	<label>Seconde</label>
+	
+	
+	<input value="0" type="text" id="setSeconde">
+	</div>
+
+	
+	<div class="buttons">
+		<button id="setStart">Start</button>
+		<button id="setReset">Reset</button>
+		<button id="setStop">Stop/Play</button>
 	</div>
 
 	<script src="node_modules/jquery/dist/jquery.js"></script>
